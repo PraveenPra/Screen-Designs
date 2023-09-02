@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-purple-100 flex justify-center items-center min-h-screen">
+    <div class="bg-gray text-[#181028]  space-y-6 shadow-lg rounded-xl max-w-md md:max-w-lg">
+
+
+
+        <div class=" bg-gradient-to-t from-emerald-500 to-teal-600 flex justify-between p-2 items-center rounded-t-xl">
+            <i class="fa-solid fa-angle-left text-white  p-2"></i>
+            <h2 class="text-white ">Reviews</h2>
+            <i class="fa-solid fa-plus text-white border-2 rounded-xl p-1 text-1"></i>
+        </div>
+        <!-- ######################################################### -->
+        <div class="rating-container">
+            <div class="star-side">
+                <div class="big-star">
+                    <span class="fa fa-star checked "></span>
+                    <span class="star-text">4.5</span>
+                </div>
+                <div>
+                    <p class="text-xs font-medium text-center">Average Rating</p>
+                    <p class="text-xs font-light text-center">Based on 23,000 ratings</p>
+                </div>
+            </div>
+
+            <div class="progress-side">
+                <div class="flex items-center justify-between gap-2 m-4">
+                    <p class="progress-head font-medium text-sm">5 star</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:85%"></div>
+                    </div>
+
+                    <p class="progress-tail text-xs  text-gray">85%</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 m-4">
+                    <p class="progress-head font-medium text-sm">4 star</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:60%"></div>
+                    </div>
+
+                    <p class="progress-tail text-xs  text-gray">60%</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 m-4">
+                    <p class="progress-head font-medium text-sm">3 star</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:43%"></div>
+                    </div>
+
+                    <p class="progress-tail text-xs  text-gray">43%</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 m-4">
+                    <p class="progress-head font-medium text-sm">2 star</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:31%"></div>
+                    </div>
+
+                    <p class="progress-tail text-xs  text-gray">31%</p>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 m-4">
+                    <p class="progress-head font-medium text-sm">1 star</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width:14%"></div>
+                    </div>
+
+                    <p class="progress-tail text-xs  text-gray">14%</p>
+                </div>
+            </div>
+        </div>
+        <!-- ######################################################## -->
+        <div class="card-container px-4 bg-white rounded-b-xl">
+            <div class="card">
+
+                <div class="img-wrapper">
+                    <img class="rounded-2xl"
+                        src="https://publish.purewow.net/wp-content/uploads/sites/2/2020/11/haircuts-for-square-faces-jennifer-aniston.jpg?fit=728%2C921" />
+                </div>
+
+                <div class="content-wrapper">
+                    <p class="font-medium title">Barbara Hines</p>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star unchecked star"></span>
+                    <span class="fa fa-star unchecked star"></span>
+                    <p class="font-light text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+                        dolores
+                        eveniet adipisci voluptatum minus adipisicing elit , harum at!</p>
+                </div>
+            </div>
+
+            <!-- -------------------------------------------- -->
+            <div class="card">
+                <div class="img-wrapper">
+                    <img class="rounded-2xl"
+                        src="https://publish.purewow.net/wp-content/uploads/sites/2/2020/11/haircuts-for-square-faces-zoe-kravitz.jpg?fit=728%2C921" />
+                </div>
+                <div class="content-wrapper">
+                    <p class="font-medium">Troy Kyles</p>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star unchecked star"></span>
+                    <p class="font-light text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quod
+                        a
+                        quibusdam aspernatur quo. Illum.</p>
+                </div>
+            </div>
+            <!-- --------------------------------------------- -->
+            <div class="card">
+                <div class="img-wrapper">
+                    <img class="rounded-2xl"
+                        src="https://publish.purewow.net/wp-content/uploads/sites/2/2020/11/haircuts-for-square-faces-cameron-diaz.jpg?fit=728%2C921" />
+                </div>
+                <div class="content-wrapper">
+                    <p class="font-medium">Nancy Shepardson</p>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <span class="fa fa-star checked star"></span>
+                    <p class="font-light text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+                        voluptas perferendis dignissimos cum cumque libero porro sed cupiditate consectetur
+                        necessitatibus!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
