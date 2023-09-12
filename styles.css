@@ -17,6 +17,8 @@ src:url(./Assets/Fonts/Barracuda-regular.ttf);
     --txt-normal:#343a40;
     --txt-light:#adb5bd;
 
+    --hover-dark:#fb6107;
+
     --s1:2.5rem;
     --s2:2rem;
     --s3:1.3rem;
@@ -45,6 +47,7 @@ header{
 background:var(--c1);
 color:var(--c5);
 height:4rem;
+margin-bottom:3rem;
 }
 
 header > h2{
@@ -58,7 +61,7 @@ main{
    
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap:16px;
+    gap:24px;
     margin:18px;
 }
 
@@ -99,14 +102,18 @@ img{
     text-align:center;
     display:flex;
     align-items:center;
+    
+    /* font-family:var(--f1); */
 }
 
 .item-action > a:hover{
-    background:#fb6107;
+    background:var(--hover-dark);
     color:#fff;
-    border-radius:50px;
+    /* border-radius:2px; */
+    box-shadow:2px 2px 10px rgba(0,0,0,0.4);
     /* padding:4px 8px;  */
-    transition: 0.3s ease-in-out;
+    transform:translateY(-10%);
+    transition: 0.2s ease-out;
 }
 
 p{
@@ -122,11 +129,28 @@ h3{
     font-size:var(--s2);
     font-weight:600;
     color:var(--c2);
+    position:relative;
 }
 
 h3::before{
-
+content:' \2022 ';
+color:var(--hover-dark);
+font-size:38px;
 }
+
+h3::after{
+    content:'';
+    width:100%;
+    height:1px;
+    background:var(--c5);;
+    color:var(--hover-dark);
+    display:inline-block;
+    /* position:absolute; */
+     /* top: 32px; Move it vertically to the center of the h3 element */
+    /* right: 0; Position it on the right side */
+    /* transform: translateY(-50%); */
+    /* font-size:18px; */
+    }
 
 h2{
     text-align: center;
