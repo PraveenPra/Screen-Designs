@@ -1,3 +1,11 @@
+:root{
+    --c1:#000000;
+    --c2:#14213d;
+    --c3:#fca311;
+    --c4:#e5e5e5;
+    --c5:#ffffff;
+    }
+    
 *{
     padding:0;
     margin:0;
@@ -6,7 +14,8 @@
 }
 
 body{
-    color:#333;
+    color:var(--c2);
+    background:var(--c4);
 }
 
 .grid-wrapper{
@@ -14,6 +23,7 @@ body{
     grid-template-columns: repeat(5,1fr);
     gap:16px;
     margin:18px;
+    background-color:var(--c5);
 }
 
 .item{
@@ -21,6 +31,7 @@ body{
     border-radius:2%;
     padding:8px;
 
+    background-color:var(--c5);
     display:flex;
     flex-direction:column;
     align-items:center;
