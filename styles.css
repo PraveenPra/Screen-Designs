@@ -1,44 +1,80 @@
+@font-face{
+font-family:"Baraccuda";
+src:url(./Assets/Fonts/Barracuda-regular.ttf);
+}
+@font-face{
+    font-family:"LeagueSpartan";
+    src:url(./Assets/Fonts/LeagueSpartan-Regular.ttf);
+    }
+
 :root{
     --c1:#000000;
     --c2:#14213d;
     --c3:#fca311;
     --c4:#e5e5e5;
     --c5:#ffffff;
+
+    --txt-normal:#343a40;
+    --txt-light:#adb5bd;
+
+    --s1:2.5rem;
+    --s2:2rem;
+    --s3:1.3rem;
+
+    --f1:'Baraccuda';
+    --f2:'LeagueSpartan';
     }
+
     
 *{
     padding:0;
     margin:0;
-    box-sizing:border-box;
-    
+    box-sizing:border-box;   
 }
 
 body{
     color:var(--c2);
     background:var(--c4);
+    
+font-family:var(--f2),sans-serif;
 }
 
+header{
+    padding:8px;
+    border-bottom:5px solid var(--c3);
+background:var(--c1);
+color:var(--c5);
+height:4rem;
+}
+
+header > h2{
+    border-bottom:1px solid var(--c3);
+}
+
+main{
+    padding:0 5%;
+}
 .grid-wrapper{
+   
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap:16px;
     margin:18px;
-    background-color:var(--c5);
 }
 
 .item{
-    border:1px dashed #ddd;
+    /* border:1px dashed #ddd; */
     border-radius:2%;
     padding:8px;
-
-    background-color:var(--c5);
     display:flex;
     flex-direction:column;
     align-items:center;
+    background-color:var(--c5);
 }
 .img-wrapper{
     height:auto;
     width:100%;
+    margin:0 0 16px 0;
 }
 
 img{
@@ -56,22 +92,48 @@ img{
 
 .item-action > a{
     text-decoration:none;
-    background:#7bdff2;
+    background:var(--c3);
     color:#fff;
     border-radius:5px;
-    padding:4px 8px; 
+    padding:8px 32px; 
+    text-align:center;
+    display:flex;
+    align-items:center;
 }
 
 .item-action > a:hover{
-    background:#00a8e8;
+    background:#fb6107;
     color:#fff;
     border-radius:50px;
-    padding:4px 8px; 
+    /* padding:4px 8px;  */
     transition: 0.3s ease-in-out;
 }
 
 p{
-    font-size:0.8em;
+    font-size:1em;
+    color:var(--txt-light);
+}
+h4{
+    font-size:var(--s3);
+    color:var(--txt-normal);
+    line-height:28px;
+}
+h3{
+    font-size:var(--s2);
+    font-weight:600;
+    color:var(--c2);
+}
+
+h3::before{
+
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: var(--s1);
+    font-family:var(--f1),sans-serif;
 }
 @media only screen and (max-width: 768px) {
     .grid-wrapper{
