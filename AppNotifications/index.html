@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <template id="item-template">
+        <div class="item flex gap-4 bg-[#392a57] px-4 py-2">
+
+            <img
+            data-placeholder="image"
+            src="" alt="avatar" class="w-10 h-10 object-cover rounded-3xl"/>
+
+            <div class="item-details">
+                <h2 class="text-[#efeef1] font-medium text-md" data-placeholder="title"></h2>
+
+                <div class="flex gap-1">
+                    <h3 class="text-[#8c839d] text-sm" data-placeholder="description">
+                    </h3>
+                    <span class="text-[#f3356d] " data-placeholder="span"></span>
+                </div>
+
+                <p class="text-[#8c839d] text-xs" data-placeholder="time"></p>
+            </div>
+        </div>
+    </template>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-[#32244e] flex justify-center items-center min-h-screen"
+    onload="renderItems('item-template', 'item-container', items)">
+
+    <header class="bg-[#2b1d48] h-10 absolute top-0 left-0 right-0 z-1"></header>
+
+    <div class="bg-[#32244e] py-1 px-1  z-20 absolute top-5 rounded-3xl" id="toggleIcon">
+        <div class="py-2 px-3  bg-[#392a57] border border-[#f3356d]   rounded-3xl">
+            <i class="fas fa-bell text-lg text-[#ffda44]"></i>
+        </div>
+    </div>
+
+
+    <div id='card' class="bg-[#392a57] space-y-4 shadow-lg rounded-xl max-w-md md:max-w-lg z-10">
+
+        <header class="bg-[#3d2e5c] text-[#8c839d] text-md p-4 rounded-t-lg">NOTIFICATIONS</header>
+
+        <div id="item-container" >
+
+        </div>
+        <div id="item-container-more" >
+
+        </div>
+
+
+        <footer id="toggleButton"
+            class="bg-[#3d2e5c] text-[#f3356d] p-4 text-center text-md rounded-b-lg  cursor-pointer"
+            onclick="">VIEW ALL</footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
