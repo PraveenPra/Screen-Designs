@@ -40,7 +40,7 @@ function updateCountdown() {
     document.getElementById("dy").textContent = days;
     document.getElementById("hr").textContent = hours;
     document.getElementById("min").textContent = minutes;
-    document.getElementById("sec").textContent = seconds;
+    document.getElementById("sec0").textContent = seconds;
 
     // Update the text based on the remaining time
     document.getElementById("dy-txt").textContent = days === 1 ? "Day" : "Days";
