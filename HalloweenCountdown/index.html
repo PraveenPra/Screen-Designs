@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-[#181028] bg-[url('https://images.pexels.com/photos/211358/pexels-photo-211358.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')] bg-center bg-cover bg-opacity-10 flex flex-col justify-center items-center min-h-screen text-white">
+
+
+    <p
+        class="relative  before:w-4 before:h-0.5 before:bg-white before:absolute before:-left-1 before:top-1/2 before:-translate-x-full  after:w-4 after:h-0.5 after:bg-white after:absolute after:-right-1 after:top-1/2 after:translate-x-full opacity-80 mt-10">
+        countdown to</p>
+    <h1 class="md:text-6xl text-4xl font-medium opacity-90">HALLOWEEN</h1>
+
+    <div class="py-10"></div>
+
+    <div id='countdown-container' class="flex gap-4 flex-wrap justify-center ">
+        <!-- <div class="time-box bg-[#101123] flex flex-col justify-center items-center py-10 px-12 opacity-60">
+            <h2 class="text-6xl font-thin">5</h2>
+            <p class="text-xl font-thin">days</p>
+        </div> -->
+<div class="time-box relative  flex flex-col justify-center items-center py-10 px-12"
+    style="background-image: radial-gradient(circle at center, rgba(0,0,0,0.5),rgba(255,255,255,0.05), rgba(16,17,35,10)); opacity-100">
+    <h2 id="dy"
+        class="text-6xl font-thin text-transparent bg-clip-text bg-gradient-to-br from-[#ff9800] via-[#f57c00] to-[#e65100]">
+        5</h2>
+    <p id="dy-txt" class="text-xl font-thin text-white opacity-90 glow">days</p>
+</div>
+
+    <div class="time-box relative  flex flex-col justify-center items-center py-10 px-12"
+        style="background-image: radial-gradient(circle at center, rgba(0,0,0,0.5),rgba(255,255,255,0.05), rgba(16,17,35,10)); opacity-100;">
+        <h2 id="hr"
+            class="text-6xl font-thin text-transparent bg-clip-text bg-gradient-to-br from-[#ff9800] via-[#f57c00] to-[#e65100]">
+            2</h2>
+        <p id="hr-txt" class="text-xl font-thin text-white opacity-90 glow">hours</p>
+    </div>
+
+    <div class="time-box relative  flex flex-col justify-center items-center py-10 px-12"
+        style="background-image: radial-gradient(circle at center, rgba(0,0,0,0.5),rgba(255,255,255,0.05), rgba(16,17,35,10)); opacity-100;">
+        <h2 id="min"
+            class="text-6xl font-thin text-transparent bg-clip-text bg-gradient-to-br from-[#ff9800] via-[#f57c00] to-[#e65100]">
+            1</h2>
+        <p id="min-txt" class="text-xl font-thin text-white opacity-90 glow">minute</p>
+    </div>
+
+        <div class="time-box relative  flex flex-col justify-center items-center py-10 px-12"
+            style="background-image: radial-gradient(circle at center, rgba(0,0,0,0.5),rgba(255,255,255,0.05), rgba(16,17,35,10)); opacity-100">
+            <h2 id="sec"
+                class="text-6xl font-thin text-transparent bg-clip-text bg-gradient-to-br from-[#ff9800] via-[#f57c00] to-[#e65100]">
+                40</h2>
+            <p  id="sec-txt" class="text-xl font-thin text-white opacity-90 glow">seconds</p>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+
+</html>
