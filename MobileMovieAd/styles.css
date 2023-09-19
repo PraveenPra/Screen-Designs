@@ -1,0 +1,26 @@
+
+.img-container{
+    width:100%;
+    margin:0;
+}
+.spread{
+    opacity: 60%;
+    position: absolute;
+    z-index: 1;
+    height:90%;
+    width:100%;
+    /* top:0; */
+}
+
+.spread > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.movie{
+    z-index: 5;
+}
+
+.play-container{
+    z-index: 10;
+}
