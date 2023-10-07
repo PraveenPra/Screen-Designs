@@ -1,0 +1,93 @@
+/* Add CSS here */
+
+#card{
+    width:400px;
+}
+
+#map{
+    height: 200px;
+}
+
+/* #map > img{
+    width:100px;
+    height:100px;
+    margin:auto;
+} */
+
+.dark-mode:is(.sun){
+display: none;
+}
+
+.dark-mode:is(.moon) {
+    display: none;
+}
+
+.dark-mode:is(header){
+background-color: #ffea00;
+border:4px solid #fca311;
+}
+
+
+.dark-mode:is(#card){
+    background-color: #3b4c7c;
+    color: #fff;
+}
+
+.dark-mode:is(body) {
+    background-color: #fff;
+    
+}
+
+.dark-mode:is(input){
+background-color: #344574;
+color:#51608a;
+}
+
+.dark-mode:is(p){
+    color:#9aa3bd;
+}
+
+.dark-mode:is(#search-icon){
+    background-color: #344574;
+    color:#9aa3bd;
+}
+
+   @keyframes shake {
+
+       0%,
+       100% {
+           transform: translateX(0);
+       }
+
+       10%,
+       30%,
+       50%,
+       70%,
+       90% {
+           transform: translateX(-10px);
+       }
+
+       20%,
+       40%,
+       60%,
+       80% {
+           transform: translateX(10px);
+       }
+   }
+
+   .shake {
+       animation: shake 0.5s infinite;
+   }
+
+   .status-icon {
+       font-size: 20px;
+       margin-left: 5px;
+   }
+
+   .status-icon.on {
+       color: green;
+   }
+
+   .status-icon.off {
+       color: red;
+   }
