@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+</head>
+
+<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+  <div id="card" class="bg-white text-[#181028] py-8 px-4 space-y-4 shadow-lg rounded max-w-md md:max-w-lg relative">
+
+    <header class="w-8 h-8  bg-[#023e8a]  rounded-full flex justify-center items-center border border-[#0077b6] border-4" onclick="toggleTheme()">
+      <i class="fas fa-moon js-fa-moon text-white moon " ></i>
+      <i class="fas fa-sun js-fa-sun sun dark-mode text-[#ff9500]" ></i>
+    </header>
+
+    <i class="fas fa-x  inline absolute right-6 top-6"></i>
+
+    <h1 class="font-bold text-lg flex items-center">
+      Check In
+
+    </h1>
+    <!-- <i class="fas fa-check-circle  "></i> -->
+
+
+    <div class="flex items-center  my-1 rounded bg-white">
+      <div id='search-icon' class="bg-[#f4f5f8] h-10 w-10 flex justify-center items-center">
+        <i class="fa-solid fa-magnifying-glass " aria-hidden="true"></i>
+      </div>
+
+
+      <input id="searchInput" type="search" placeholder="Search Location" class="text-sm bg-[#f4f5f8] h-10  flex-grow outline-none" >
+
+      <!-- <input type="password" placeholder="Password" class="flex-grow  bg-transparent outline-none text-[#8e949a] text-xs"> -->
+    </div>
+
+    
+
+
+    <div id="map" class="w-full h-80 md:h-96">
+       <!-- <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3l-UPfP3Ov5Qt5t--cinFVNFjK0Em3-6ftwjwMvgpc_G2Do2j" alt="Map" id="map-img"> -->
+    </div>
+
+    <h2 class="font-bold text-sm text-center" id="locationStatus">See places near you</h2>
+
+    <p class="text-xs text-[#a4acc1] text-center" id="locationDescription">To see a list of places kindly allow us to
+      access your location while you use your app.</p>
+
+    <button id="locationButton" class="text-white bg-[#2ebeff] w-full rounded p-1">Turn on location</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+
+</html>
